@@ -1,0 +1,14 @@
+# trern_theme-js:
+#   filter: rjsmin
+#   output: ckanext-trern_theme/%(version)s-trern_theme.js
+#   contents:
+#     - js/trern_theme.js
+#   extra:
+#     preload:
+#       - base/main
+
+trern_styles-css:
+  filter: cssrewrite
+  output: ckanext-trern_theme/%(version)s-trern_styles.css
+  contents:
+    - css/trern_styles.css
