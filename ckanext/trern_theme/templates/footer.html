@@ -1,0 +1,65 @@
+{% ckan_extends %}
+
+<footer class="site-footer">
+  <div class="container">
+    {% block footer_content %}
+      <div class="footer-content">
+        <div class="footer-col">
+          <h3>LOGO</h3>
+          <p>Av. Rui Barbosa, 215, Tirol - 59015-290, Natal/RN</p>
+          <p>(84) 3654-6000</p>
+        </div>
+
+        <div class="footer-col">
+          <ul>
+            <li>
+              <a href="" class="primary">Sobre</a>
+            </li>
+            <li>
+              <a href="">Política de dados abertos</a>
+            </li>
+            <li>
+              <a href="">Dados e privacidade</a>
+            </li>
+            <li>
+              <a href="">Contato</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <ul>
+            <li>
+              <a href="" class="primary">Organizações</a>
+            </li>
+            <li>
+              <a href="">Conjuntos de dados</a>
+            </li>
+            <li>
+              <a href="">Grupos</a>
+            </li>
+            <li>
+              <a href="">Etiquetas</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <strong>Redes sociais</strong>
+          <div class="socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    {% endblock %}
+  </div>
+
+  {% block footer_debug %}
+    {% if g.debug %}
+      {% include 'snippets/debug.html' %}
+    {% endif %}
+  {% endblock %}
+</footer>
