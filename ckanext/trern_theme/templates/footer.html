@@ -1,9 +1,7 @@
-{% ckan_extends %}
-
 <footer class="site-footer">
-  <div class="container">
-    {% block footer_content %}
-      <div class="footer-content">
+  <div class="t-footer">
+    <div class="container t-content">
+      <div class="l-content">
         <div class="footer-col">
           <h3 class="logo">LOGO</h3>
           <p>Portal de dados abertos do Tribunal Regional Eleitoral do Rio Grande do Norte.</p>
@@ -13,6 +11,26 @@
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-youtube"></i></a>
           </div>
+        </div>
+      </div>
+      <div class="r-content">
+        <div class="footer-col">
+          <h3>Política</h3>
+          <ul>
+            <ul>
+              <li>
+                <a href="">Política de dados abertos</a>
+              </li>
+              <li>
+                <a href="">Dados e privacidade</a>
+              </li>
+            <li>
+              <a href="" class="primary">Sobre</a>
+            </li>
+            <li>
+              <a href="">Contato</a>
+            </li>
+          </ul>
         </div>
         <div class="footer-col">
           <h3>Dados</h3>
@@ -31,30 +49,17 @@
             </li>
           </ul>
         </div>
-        <div class="footer-col">
-          <h3>Informações</h3>
-          <ul>
-            <li>
-              <a href="" class="primary">Sobre</a>
-            </li>
-            <li>
-              <a href="">Contato</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3>Política</h3>
-          <ul>
-            <li>
-              <a href="">Política de dados abertos</a>
-            </li>
-            <li>
-              <a href="">Dados e privacidade</a>
-            </li>
-          </ul>
-        </div>
       </div>
-    {% endblock %}
+    </div>
+  </div>
+  <div class="b-footer">
+    <div class="container b-content">
+      <div class="contacts">
+        <p><i class="fas fa-phone"></i>(84) 3654-5190</p>
+        <p><i class="fas fa-envelope"></i>ouvidoria@tre-rn.jus.br</p>
+      </div>
+      <div class="link-ckan">Desenvolvido a partir do <a target="_blank" href="https://ckan.org/">CKAN</a></div>
+    </div>
   </div>
 
   {% block footer_debug %}
