@@ -35,11 +35,139 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .container {
   width: 100%;
   max-width: 1152px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  background: var(--white);
+}
+
+/* NAV */
+.nav {
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav::after,
+.nav::before {
+  display: none;
+}
+
+.nav-logo,
+.nav-close,
+.nav-toggle {
+  color: var(--black-800);
+}
+
+.nav-logo {
+  text-transform: uppercase;
+  font-size: 1.15rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+  text-decoration: none;
+}
+
+.nav-logo:hover {
+  color: var(--blue-800);
+}
+
+.nav-toggle {
+  display: inline-flex;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px){
+  .nav-menu {
+    position: fixed;
+    background-color: var(--white);
+    width: 80%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    box-shadow: -2px 0 4px hsla(152, 24%, 15%, .1);
+    padding: 4rem 0 0 3rem;
+    border-radius: 1rem 0 0 1rem;
+    transition: .3s;
+    z-index: 100;
+  }
+}
+
+.nav-close {
+  font-size: 1.25rem;
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  cursor: pointer;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  /* Retirar margin-bottom dos styles do CKAN */
+  margin-bottom: 0;
+}
+
+.nav-link,
+.nav-item > a {
+  color: var(--black-800);
+  font-weight: 500;
+  transition: 0.3s;
+
+  /* Retirar estilização padrão do CKAN */
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: var(--blue-800);
+}
+
+.show-menu {
+  right: 0;
+}
+
+@media screen and (min-width: 767px) {
+  .nav {
+    height: 5rem;
+    column-gap: 3rem;
+  }
+
+  .nav-toggle,
+  .nav-close,
+  .btns {
+    display: none;
+  }
+
+  .nav-list{
+    flex-direction: row;
+    column-gap: 3rem;
+  }
+
+  .nav-menu{
+    margin-left: auto;
+  }
 }
 
 /* FOOTER */
@@ -92,9 +220,15 @@ ul {
   color: var(--white);
 }
 
-.footer-col .logo {
-  font-weight: 900;
+.footer-col .footer-logo {
+  color: var(--white);
   margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  font-size: 1.15rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
 }
 
 .footer-col h3 {
