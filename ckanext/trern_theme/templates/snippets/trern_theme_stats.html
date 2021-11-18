@@ -1,0 +1,24 @@
+{#
+
+  Renderiza um grid com os valores das estatísticas
+  do portal.
+  
+#}
+
+<div class="stats">
+  <a href="{{ g.site_url }}/organization" class="stats-card">
+    <strong>{{ stats.organization_count }}</strong>
+    <span>Organizações</span>
+    <i class="fas fa-chevron-right"></i>
+  </a>
+  <a href="{{ g.site_url }}/group" class="stats-card">
+    <strong>{{ stats.group_count }}</strong>
+    <span>Grupos</span>
+    <i class="fas fa-chevron-right"></i>
+  </a>
+  <a href="{{ g.site_url }}/dataset" class="stats-card">
+    <strong>{{ stats.dataset_count }}</strong>
+    <span>Conjunto de dados</span>
+    <i class="fas fa-chevron-right"></i>
+  </a>
+</div>
