@@ -204,18 +204,24 @@ main {
   align-items: center;
 }
 
-.input-content .input-icon {
+.input-content .input-button {
   padding: 1.25rem;
   padding-right: 1rem;
+  background: none;
+  border: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.input-content .input-icon i {
+.input-content .input-button i {
   font-size: 1.125rem;
   color: var(--blue-800);
   cursor: pointer;
 }
 
-.input-content .input-icon i:hover {
+.input-content .input-button i:hover {
   color: var(--blue-500);
 }
 
@@ -266,6 +272,8 @@ main {
 
 .groups-list span {
   color: var(--gray-500);
+  font-size: 1rem;
+  line-height: 1.625rem;
 }
 
 .groups-list .groups {

@@ -1,0 +1,20 @@
+{#
+
+  Renderiza um input de busca por dados no portal.
+  
+#}
+
+<form method="get" action="{% url_for 'dataset.search' %}">
+  <div class="input-content">
+    <button class="input-button" type="submit">
+      <i class="fas fa-search"></i>
+    </button>
+    <input 
+      class="input-search" 
+      type="text" 
+      placeholder="Buscar dados no portal"
+      id="field-main-search"
+      name="q"
+    >
+  </div>
+</form>

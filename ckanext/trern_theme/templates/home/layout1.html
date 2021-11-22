@@ -1,31 +1,8 @@
 <main>
   <div class="container">
-    <div class="input-content">
-      <div class="input-icon">
-        <i class="fas fa-search"></i>
-      </div>
-      <input class="input-search" type="text" placeholder="Buscar dados no portal">
-    </div>
+    {% snippet 'snippets/trern_theme_search.html' %}
 
     {% snippet 'snippets/trern_theme_groups.html', groups=h.trern_theme_get_groups() %}
-
-    <!-- <div class="stats">
-      <div class="stats-card">
-        <strong>16</strong>
-        <span>Organizações</span>
-        <i class="fas fa-chevron-right"></i>
-      </div>
-      <div class="stats-card">
-        <strong>6</strong>
-        <span>Grupos</span>
-        <i class="fas fa-chevron-right"></i>
-      </div>
-      <div class="stats-card">
-        <strong>100+</strong>
-        <span>Conjunto de dados</span>
-        <i class="fas fa-chevron-right"></i>
-      </div>
-    </div> -->
 
     {% snippet 'snippets/trern_theme_stats.html', stats=h.get_site_statistics() %}
   </div>
