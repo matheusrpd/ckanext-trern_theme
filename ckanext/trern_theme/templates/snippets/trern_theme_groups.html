@@ -11,7 +11,7 @@
   </span>
   <div class="groups">
     {% for group in groups %}
-      <a href="{{ h.url_for('group_read', action='read', id=group.name) }}" class="group">
+      <a href="{{ h.url_for('group_read', id=group.name) }}" class="group">
         <img src="{{ group.image_display_url }}" alt="{{ group.display_name }}">
         <strong>{{ group.display_name }}</strong>
       </a>
