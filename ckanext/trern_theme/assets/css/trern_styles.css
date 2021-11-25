@@ -69,24 +69,19 @@ header {
   display: none;
 }
 
-.trern_theme-nav-logo,
 .trern_theme-nav-close,
 .trern_theme-.nav-toggle {
   color: var(--black-800);
 }
 
 .trern_theme-nav-logo {
-  text-transform: uppercase;
-  font-size: 1.15rem;
-  font-weight: 700;
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  column-gap: .5rem;
-  text-decoration: none;
+  justify-content: center;
 }
 
-.trern_theme-nav-logo:hover {
-  color: var(--blue-800);
+.trern_theme-nav-logo img {
+  height: 3rem;
 }
 
 .trern_theme-nav-toggle {
@@ -185,6 +180,19 @@ header {
     margin-left: auto;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .trern_theme-nav-logo img {
+    height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .trern_theme-nav-logo img {
+    height: 2.3rem;
+  }
+}
+
 /* INPUT SEARCH */
 main {
   height: 100%;
@@ -430,14 +438,8 @@ main {
 }
 
 .footer-col .footer-logo {
-  color: var(--white);
+  width: 15rem;
   margin-bottom: 1.5rem;
-  text-transform: uppercase;
-  font-size: 1.15rem;
-  font-weight: 700;
-  display: inline-flex;
-  align-items: center;
-  column-gap: .5rem;
 }
 
 .footer-col h3 {
